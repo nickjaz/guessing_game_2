@@ -8,7 +8,7 @@ alert('Hello ' + user + ' ! Let\s play a little game')
 var greeting = prompt('You are going to ask me a few questions to see what kind of Pokemon trainer I am. Sound good? (Y|N)').toUpperCase();
 console.log(greeting);
 
-  if(greeting === 'Y' || greeting 'Yes'){
+  if(greeting === 'Y' || greeting 'YES'){
     alert('Great, I\'m excited to start this journey');
   }else{
     alert('Too..bad. A Dragonite holds you hostage!');
@@ -47,7 +47,7 @@ console.log(dragon);
     alert('Really?! You must know nothing about Pokemon!');
   }
 
-var badge = prompt('What badge is my most favourite by design? (Boulder|Rainbow|Earth)').toLowerCasae();
+var badge = prompt('What badge is my most favourite by design? (Boulder|Rainbow|Earth)').toLowerCase();
 console.log(badge);
 
   if (badge === 'earth'){
@@ -58,4 +58,13 @@ console.log(badge);
     alert('No..that is the most plain of them all');
   }
 
-var 
+var region = prompt('What region is the best from the options given? (Kanto|Johto|Hoenn)').toLowerCase();
+console.log(region);
+
+  if (region === 'Kanto'){
+    alert('That is correct!! The original is the best!');
+  }else if(region === 'Johto'){
+    alert('The second generation isn\'t bad, but it still isn\'t the original');
+  }else{
+    alert('That isn\'t right. The third is a good choice but not that the best');
+  }
