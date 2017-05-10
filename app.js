@@ -8,7 +8,7 @@ alert('Hello ' + user + ' ! Let\s play a little game')
 var greeting = prompt('You are going to ask me a few questions to see what kind of Pokemon trainer I am. Sound good? (Y|N)').toUpperCase();
 console.log(greeting);
 
-  if(greeting === 'Y' || greeting 'YES'){
+  if(greeting === 'Y' || greeting === 'YES'){
     alert('Great, I\'m excited to start this journey');
   }else{
     alert('Too..bad. A Dragonite holds you hostage!');
@@ -40,7 +40,7 @@ var dragon = prompt('Which type is the strongest? (Dragon|Steel|Rock)').toLowerC
 console.log(dragon);
 
   if (dragon === 'dragon'){
-    alert('Here the Dragon\'s roar!! Dragons are definetly the strongest!!');
+    alert('Hear the Dragon\'s roar!! Dragons are definetly the strongest!!');
   }else if(dragon === 'steel'){
     alert('Not Quite..That would be the most tankish');
   }else{
@@ -61,10 +61,29 @@ console.log(badge);
 var region = prompt('What region is the best from the options given? (Kanto|Johto|Hoenn)').toLowerCase();
 console.log(region);
 
-  if (region === 'Kanto'){
+  if (region === 'kanto'){
     alert('That is correct!! The original is the best!');
   }else if(region === 'Johto'){
     alert('The second generation isn\'t bad, but it still isn\'t the original');
   }else{
     alert('That isn\'t right. The third is a good choice but not that the best');
   }
+
+var pokemonTypes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var types = prompt('How many Pokemon types are there?');
+var flag;
+
+
+  for (var i = 0; i < pokemonTypes.length; i++){
+    console.log('Pokemon Types:', pokemonTypes[i]);
+
+    if (types === pokemonTypes[i]){
+      alert('You got it!!');
+      flag=true;
+      break;
+    }
+  }
+
+if (!flag){
+  alert('Sorry.. That is wrong');
+}
