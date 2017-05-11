@@ -3,7 +3,7 @@
 var user = prompt('What is your name?');
 console.log('user', user);
 
-alert('Hello ' + user + ' ! Let\s play a little game');
+alert('Hello ' + user + ' ! Let\'s play a little game');
 
 function greeting() {
   var greeting = prompt('You are going to ask me a few questions to see what kind of Pokemon trainer I am. Sound good? (Y|N)').toUpperCase();
@@ -11,9 +11,9 @@ function greeting() {
 
   if (greeting === 'Y' || greeting === 'YES') {
     alert('Great, I\'m excited to start this journey');
-    }else {
+  }else {
     alert('Too..bad. A Dragonite holds you hostage!');
-    }
+  }
 }
 
 function starter() {
@@ -33,13 +33,13 @@ function questionFavourite() {
   var favourite = prompt('What is Jake\'s favourite type? (Fire|Physic|Ghost)').toLowerCase();
   console.log(favourite);
 
-    if(favourite === 'physic' || favourite === 'p'){
-      alert('Mind over body!! You are correct!');
-    }else if(favourite === 'fire' || favourite === 'f'){
-      alert('A little too hot for my taste..');
-    }else{
-      alert('I don\'t believe in Ghosts!!');
-    }
+  if(favourite === 'physic' || favourite === 'p'){
+    alert('Mind over body!! You are correct!');
+  }else if(favourite === 'fire' || favourite === 'f'){
+    alert('A little too hot for my taste..');
+  }else{
+    alert('I don\'t believe in Ghosts!!');
+  }
 }
 
 function questionStrong() {
@@ -60,17 +60,17 @@ function questionBadge() {
   console.log(badge);
 
   if (badge === 'earth'){
-      alert('Correct!! Along with it being the hardest and final!!');
-    }else if(badge === 'rainbow'){
-      alert('Real life Rainbows are pretty but not this badge..');
-    }else{
-      alert('No..that is the most plain of them all');
-    }
+    alert('Correct!! Along with it being the hardest and final!!');
+  }else if(badge === 'rainbow'){
+    alert('Real life Rainbows are pretty but not this badge..');
+  }else{
+    alert('No..that is the most plain of them all');
+  }
 }
 
 function questionRegion() {
-var region = prompt('What region is the best from the options given? (Kanto|Johto|Hoenn)').toLowerCase();
-console.log(region);
+  var region = prompt('What region is the best from the options given? (Kanto|Johto|Hoenn)').toLowerCase();
+  console.log(region);
 
   if (region === 'kanto'){
     alert('That is correct!! The original is the best!');
@@ -91,20 +91,20 @@ function questionPokemon() {
   if (pokemon < 151){
     alert('You guessed is too low');
     counter++;
-  }else if(number > 151){
+  }else if(pokemon > 151){
     alert('Your guess is too high');
     counter++;
-  }else if(number === NaN || number === null){
+  }else if(isNaN(pokemon) || pokemon === null){
     alert('enter a number please');
     counter++;
   }
   console.log('counter:', counter);
 }
 
-
-var pokemonNames = ['Cubone', 'Blastoise', 'Charmander', 'Dragonite', 'MewTwo'];
-var types = prompt('What is my favourite pokemon?');
-var flag;
+function questionPokemonNames(){
+  var pokemonNames = ['Cubone', 'Blastoise', 'Charmander', 'Dragonite', 'MewTwo'];
+  var types = prompt('What is my favourite pokemon?');
+  var flag;
 
   for (var i = 0; i < pokemonNames.length; i++){
     console.log('Pokemon:', pokemonNames[i]);
@@ -116,6 +116,7 @@ var flag;
     }
   }
 
-if (!flag){
-  alert('Sorry.. That is wrong');
+  if (!flag){
+    alert('Sorry.. That is wrong');
+  }
 }
