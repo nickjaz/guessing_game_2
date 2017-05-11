@@ -69,17 +69,37 @@ console.log(region);
     alert('That isn\'t right. The third is a good choice but not that the best');
   }
 
-var pokemonTypes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var types = prompt('How many Pokemon types are there?');
+var pokemon;
+var counter = 1;
+
+  while (pokemon !== 151);
+    pokemon = parseInt(prompt('How many Pokemon did I catch yesterday?'));
+
+    if (pokemon < 151){
+      alert('You guessed is too low')
+      counter++;
+    }else if(number > 151){
+      alert('Your guess is too high')
+      counter++;
+    }else if(number === NaN || number === null){
+      alert('enter a number please');
+      counter++;
+    }
+  }
+
+  console.log('counter:', counter);
+
+var pokemonNames = ['Cubone', 'Blastoise', 'Charmander', 'Dragonite', 'MewTwo'];
+var types = prompt('What is my favourite pokemon?');
 var flag;
 
 
-  for (var i = 0; i < pokemonTypes.length; i++){
-    console.log('Pokemon Types:', pokemonTypes[i]);
+  for (var i = 0; i < pokemonNames.length; i++){
+    console.log('Pokemon:', pokemonNames[i]);
 
-    if (types === pokemonTypes[i]){
+    if (types === pokemonNames[i]) {
       alert('You got it!!');
-      flag=true;
+      flag = true;
       break;
     }
   }
