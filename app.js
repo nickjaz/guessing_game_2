@@ -85,7 +85,6 @@ var counter = 1;
       alert('enter a number please');
       counter++;
     }
-  }
 
   console.log('counter:', counter);
 
