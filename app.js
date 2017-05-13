@@ -29,6 +29,8 @@ function starter() {
   }
 }
 
+starter();
+
 function questionFavourite() {
   var favourite = prompt('What is Jake\'s favourite type? (Fire|Physic|Ghost)').toLowerCase();
   console.log(favourite);
@@ -41,6 +43,8 @@ function questionFavourite() {
     alert('I don\'t believe in Ghosts!!');
   }
 }
+
+questionFavourite();
 
 function questionStrong() {
   var strong = prompt('Which type is the strongest? (Dragon|Steel|Rock)').toLowerCase();
@@ -55,6 +59,8 @@ function questionStrong() {
   }
 }
 
+questionStrong();
+
 function questionBadge() {
   var badge = prompt('What badge is my most favourite by design? (Boulder|Rainbow|Earth)').toLowerCase();
   console.log(badge);
@@ -68,6 +74,8 @@ function questionBadge() {
   }
 }
 
+questionBadge();
+
 function questionRegion() {
   var region = prompt('What region is the best from the options given? (Kanto|Johto|Hoenn)').toLowerCase();
   console.log(region);
@@ -80,6 +88,8 @@ function questionRegion() {
     alert('That isn\'t right. The third is a good choice but not that the best');
   }
 }
+
+questionRegion();
 
 function questionPokemon() {
   var pokemon;
@@ -101,6 +111,8 @@ function questionPokemon() {
   console.log('counter:', counter);
 }
 
+questionPokemon();
+
 function questionPokemonNames(){
   var pokemonNames = ['Cubone', 'Blastoise', 'Charmander', 'Dragonite', 'MewTwo'];
   var types = prompt('What is my favourite pokemon?');
@@ -120,3 +132,5 @@ function questionPokemonNames(){
     alert('Sorry.. That is wrong');
   }
 }
+
+questionPokemonNames();
