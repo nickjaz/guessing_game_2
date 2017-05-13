@@ -14,11 +14,19 @@ p{
   margin-bottom: 20px;
 }
 
-h2{
-  font-style:italic;
-  font-size: 15px;
-}
-
 img{
   border-radius: 100%;
+}
+
+main{
+  height: 1000px;
+  width: 750px;
+}
+
+
+.heading{
+  font-size: 50px;
+  font-family: fantasy;
+  color:
+
 }
