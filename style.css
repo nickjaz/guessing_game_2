@@ -25,8 +25,30 @@ main{
 
 
 .heading{
+  text-shadow: 2px 2px 5px black;
+  color: purple;
   font-size: 50px;
   font-family: fantasy;
-  color:
+}
 
+.town{
+  border: solid 2px black;
+  box-shadow: 10px 10px  5px grey;
+  float: left;
+}
+
+.squirtle{
+  padding: 10px;
+  border: solid 1px blue;
+  float: left;
+}
+
+.fire{
+  padding: 10px;
+  background: red;
+  float: left;
+}
+
+.cubone{
+  box-shadow: 10px 5px 5px black, 20px 10px 10px purple;
 }
