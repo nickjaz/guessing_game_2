@@ -14,11 +14,42 @@ p{
   margin-bottom: 20px;
 }
 
-h2{
-  font-style:italic;
-  font-size: 15px;
-}
-
 img{
   border-radius: 100%;
+}
+
+main{
+  height: 1000px;
+  width: 750px;
+}
+
+
+.heading{
+  text-shadow: 2px 2px 5px black;
+  color: purple;
+  font-size: 50px;
+  font-family: fantasy;
+}
+
+.town{
+  border: solid 2px black;
+  box-shadow: 10px 10px  5px grey;
+  float: left;
+}
+
+.squirtle{
+  padding: 10px;
+  border: solid 1px blue;
+  float: left;
+}
+
+.fire{
+  padding: 10px;
+  background: red;
+  float: left;
+}
+
+.cubone{
+  box-shadow: 10px 5px 5px black, 20px 10px 10px purple;
+  outline: solid 1px red;
 }
